@@ -1,0 +1,41 @@
+#assignments {
+    background-color: #222222;
+    color: #393939;
+}
+
+#table-header {
+    background-color: #393939;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 3em;
+    font-family: Verdana;
+}
+
+#assignments {
+    font-size: 2em;
+}
+
+tr td {
+    padding-left: 200px;
+}
+
+.assign-header td{
+    
+    
+}
+
+.assign-item td{
+    background-color: #222222;
+    color: #ABABAB;
+}
+
+td a {
+    color: green;
+}
+
+a:hover {
+    color: #74A36D;
+    transition: .2s;
+    font-size: 1.05em;
+}

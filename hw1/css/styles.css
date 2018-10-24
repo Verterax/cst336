@@ -1,0 +1,90 @@
+@font-face {
+    font-family: nvidia;
+    src: url('www.nvidia.com/gtx-700-graphics-cards/static/fonts/geforce-bold.ttf');
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-size: 1.2em;
+}
+
+p {
+    color: green;
+}
+
+header, nav, footer {
+    text-align: center;
+    margin: 0 auto;
+	max-width: 50%;
+}
+
+main {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 50%;
+}
+
+nav a { /*links within the nav container */
+    padding: 15px;
+    padding-bottom: 4px;
+    font-size: 1.8em;
+    text-decoration: none;     /* removes the underline*/
+    color: white;             /* by default, links are blue*/
+}
+
+nav a:hover {
+    border-bottom: 2px green solid;
+    font-size: 2em;
+    transition: .2s; /* Transition effect*/
+}
+
+footer {
+    clear: left;
+    font-size: 1em;
+    color: green;
+}
+
+.current {
+	border-bottom: 2px green solid;
+}
+
+.rightImg {
+    float: right;
+}
+
+hr {
+	width: 50%;
+}
+
+table {
+    margin: 0px auto;
+}
+
+td {
+    font-size: 1.3em;
+    padding-right: 10px;
+}
+
+td strong {
+    color: green;
+}
+
+#table-header {
+    background-color: #351a00;
+}
+
+.table-row {
+    background-color: #753900;
+}
+
+ul {
+    text-align: left;
+    padding-left:50px;
+}
+
+h1 {
+    font-family: 'nvidia';
+    font-size: 4em;
+    margin-bottom: 0px;
+}
