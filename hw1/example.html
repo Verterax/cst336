@@ -20,8 +20,6 @@
             <a href="refs.html">Sources</a>
         </nav>
         
-        <br/><br/>
-        
         <main>
             <h2>The CUDA programming model and pipeline.</h2>
             <p>In order to use an Nvidia GPU to run parallelized code, it’s vital to understand how a parallelized algorithm differs from serial algorithms you’re familiar with. For the simplest example of how to divide up the work, let’s imagine a regular for loop:</p>
@@ -33,8 +31,6 @@
             <img src="img/model.png" alt="CUDA threading and memory model" />
             <p>CUDA ready GPUs are complete compute units. They contain the processors, as well as a memory space separate from the host memory space. As such, data to process is copied from host to GPU. And results must be copied back from the GPU memory, back to the host memory following an operation. The graphic above shows the CUDA threading model and memory model.</p>
             
-            
-
         </main>
         
         <footer>
