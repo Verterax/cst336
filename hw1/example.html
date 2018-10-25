@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>About CUDA</title>
+        <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    
+    <body>
+        <header>
+            <h1>Nvidia's CUDA Technology</h1>
+            <p>General Purpose Computing on GPUs</p>
+        </header>
+        
+        <nav>
+            <hr width="50%" />
+            <a href="index.html">Home</a>
+            <a href="example.html" class="current">Example</a>
+            <a href="computing.html">Use</a>
+            <a href="refs.html">Sources</a>
+        </nav>
+        
+        <br/><br/>
+        
+        <main>
+            <h2>The CUDA programming model and pipeline.</h2>
+            <p>In order to use an Nvidia GPU to run parallelized code, it’s vital to understand how a parallelized algorithm differs from serial algorithms you’re familiar with. For the simplest example of how to divide up the work, let’s imagine a regular for loop:</p>
+            <script src="https://gist.github.com/Verterax/52036fe006196480d07352c9d5a6dd01.js"></script>
+            <p>We can see that this code will run in O(N) time.</p>
+            <p>Now let’s look at how this algorithm might be implemented in CUDA C pseudocode.</p>
+            <script src="https://gist.github.com/Verterax/ac30942d63a9320a25791a3a1753cc30.js"></script>
+            <p>When the above code is executed on the GPU, every thread on the card will execute the method. Each thread knows its own threadId. Then if threadId is larger than N, the executing thread simply exits without printing anything. This threadId variable can also be used in creative ways to address memory in an array. The above code would run in O(N/threadCount) where the variable threadCount is the number of threads that any Nvidia GPU model has. Threads are organized into groups called blocks, and blocks are part of groups called grids. This logical organization helps a thread calculate its threadId when the workload is greater than the threadCount on the GPU.</p>
+            <img src="img/model.png" alt="CUDA threading and memory model" />
+            <p>CUDA ready GPUs are complete compute units. They contain the processors, as well as a memory space separate from the host memory space. As such, data to process is copied from host to GPU. And results must be copied back from the GPU memory, back to the host memory following an operation. The graphic above shows the CUDA threading model and memory model.</p>
+            
+            
+
+        </main>
+        
+        <footer>
+            <hr>
+            CST-336. 2018 &copy; Caldwell <br/>
+            <strong>Disclaimer:</strong> The information in this webpage is used for academic purposes only.<br/>
+            <img src="img/csumb_logo.png" alt="CSUMB Otter Logo" />
+        </footer>
+        
+    </body>
+</html>

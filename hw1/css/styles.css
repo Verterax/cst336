@@ -13,6 +13,10 @@ p {
     color: green;
 }
 
+li a {
+    color: green;
+}
+
 header, nav, footer {
     text-align: center;
     margin: 0 auto;
@@ -79,6 +83,7 @@ td strong {
 }
 
 ul {
+    margin: 0px;
     text-align: left;
     padding-left:50px;
 }
