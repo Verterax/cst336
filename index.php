@@ -22,39 +22,39 @@
                     <td>Personal Portfolio</td>
                 </tr>
                 <tr class= "assign-item">
-                    <td><a href="lab2/index.html">Lab 2</a></td>
+                    <td><a href="lab2/index.php">Lab 2</a></td>
                     <td>--</td>
                 </tr>
                 <tr class= "assign-item">
-                    <td><a href="lab3/index.html">Lab 3</a></td>
+                    <td><a href="lab3/index.php">Lab 3</a></td>
                     <td>--</td>
                 </tr>
                 <tr class= "assign-item">
-                    <td><a href="lab4/index.html">Lab 4</a></td>
+                    <td><a href="lab4/index.php">Lab 4</a></td>
                     <td>--</td>
                 </tr>
                 <tr class= "assign-item">
-                    <td><a href="lab5/index.html">Lab 5</a></td>
+                    <td><a href="lab5/index.php">Lab 5</a></td>
                     <td>--</td>
                 </tr>
                 <tr class= "assign-item">
-                    <td><a href="lab6/index.html">Lab 6</a></td>
+                    <td><a href="lab6/index.php">Lab 6</a></td>
                     <td>--</td>
                 </tr>
                 <tr class= "assign-item">
-                    <td><a href="lab7/index.html">Lab 7</a></td>
+                    <td><a href="lab7/index.php">Lab 7</a></td>
                     <td>--</td>
                 </tr>
                 <tr class= "assign-item">
-                    <td><a href="lab8/index.html">Lab 8</a></td>
+                    <td><a href="lab8/index.php">Lab 8</a></td>
                     <td>--</td>
                 </tr>
                 <tr class= "assign-item">
-                    <td><a href="lab9/index.html">Lab 9</a></td>
+                    <td><a href="lab9/index.php">Lab 9</a></td>
                     <td>--</td>
                 </tr>
                 <tr class= "assign-item">
-                    <td><a href="lab10/index.html">Lab 10</a></td>
+                    <td><a href="lab10/index.php">Lab 10</a></td>
                     <td>--</td>
                 </tr>
                 
@@ -69,15 +69,15 @@
                     <td>CS Related Topic</td>
                 </tr>
                 <tr class= "assign-item">
-                    <td><a href="hw2/index.html">Homework 2</a></td>
+                    <td><a href="hw2/index.php">Homework 2</a></td>
                     <td>--</td>
                 </tr>
                 <tr class= "assign-item">
-                    <td><a href="hw3/index.html">Homework 3</a></td>
+                    <td><a href="hw3/index.php">Homework 3</a></td>
                     <td>--</td>
                 </tr>
                 <tr class= "assign-item">
-                    <td><a href="hw4/index.html">Homework 4</a></td>
+                    <td><a href="hw4/index.php">Homework 4</a></td>
                     <td>--</td>
                 </tr>
                 
