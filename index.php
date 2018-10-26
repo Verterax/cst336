@@ -23,7 +23,7 @@
                 </tr>
                 <tr class= "assign-item">
                     <td><a href="lab2/index.php">Lab 2</a></td>
-                    <td>--</td>
+                    <td>Slot Machine</td>
                 </tr>
                 <tr class= "assign-item">
                     <td><a href="lab3/index.php">Lab 3</a></td>

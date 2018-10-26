@@ -32,7 +32,7 @@
                         case 0: $totalPoints = 1000;
                             echo "<h1>Jackpot!</h1>";
                             
-                            echo "<audio autoplay> <source src='/cst336/lab2/audio/winning.mp3' type='audio/mpeg'> </audio>";
+                            echo "<audio autoplay> <source src='/lab2/audio/winning.mp3' type='audio/mpeg'> </audio>";
                             break;
                         case 1: $totalPoints = 500;
                             break;
