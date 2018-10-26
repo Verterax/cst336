@@ -1,10 +1,10 @@
 @font-face {
-    font-family: nvidia;
-    src: url('www.nvidia.com/gtx-700-graphics-cards/static/fonts/geforce-bold.ttf');
+    font-family: 'nvidia';
+    src: url('../font/geforce-bold.ttf');
 }
 
 body {
-    background: url("star-code.jpg") repeat 0 0;
+    background: url("../img/star-code.jpg") repeat 0 0;
     background-attachment: fixed;
     background-color: black;
     color: white;
