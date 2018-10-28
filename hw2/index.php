@@ -15,10 +15,15 @@
             </audio>
             
             <div id="play-space">
-                <?php cardTest(); ?>
+                <?php 
+                    displayCards(false); 
+                ?>
             </div>
         </div>
         <img id="play-bar" src="img/bottom_bar.png" alt=""/>
+        <?php 
+            
+        ?>
     </body>
     
     <script>
@@ -27,8 +32,12 @@
         function playHoverSound() {
             hoverSound.play();
         }
-        function playClickSound(){
+        function playClickSound(tableIndex){
             clickSound.play();
+            setTimeout(function() { redirect(tableIndex); }, 450);
+        }
+        function redirect(tableIndex) {
+            window.location.href = 'index.php?tableIndex=' + tableIndex;
         }
     </script>
     
