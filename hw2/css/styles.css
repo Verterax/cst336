@@ -1,6 +1,6 @@
 body {
     background-color: black;
-    color: white;
+    color: yellow;
     height: 70vh;
     width: 100vw;
 }
@@ -55,4 +55,21 @@ td {
     padding: 3px;
     object-fit: contain;
     border-radius: 5%;
+}
+
+footer {
+    font-size: 1em;
+    color: yellow;
+    width:100%;
+}
+
+footer div {
+    width: 55%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+hr {
+	width: 50%;
+	margin: 1% auto;
 }
