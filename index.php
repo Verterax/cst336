@@ -70,7 +70,7 @@
                 </tr>
                 <tr class= "assign-item">
                     <td><a href="hw2/index.php">Homework 2</a></td>
-                    <td>--</td>
+                    <td>Mario 3 Spades Game</td>
                 </tr>
                 <tr class= "assign-item">
                     <td><a href="hw3/index.php">Homework 3</a></td>
