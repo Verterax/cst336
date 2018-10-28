@@ -28,6 +28,13 @@
         </div>
         <img id="play-bar" src="img/bottom_bar.png" alt=""/>
         
+        <div id="references">
+            <p>References:</p>
+            <a href="https://www.youtube.com/watch?v=YZFxVDyB0xw">Spade House Music</a>
+            <a href="https://www.youtube.com/watch?v=xeCfSRN9RkM">Mario 3 Sound Effects</a>
+            <a href="https://strategywiki.org/wiki/Super_Mario_Bros._3/Secrets">Spade House Graphics</a>
+        </div>
+        
         <footer>
             <div>
             <hr>
@@ -70,6 +77,7 @@
                 oneup.play();
             else
                 match.play();
+                setTimeout(function() { playMusic(); }, 1100);
         }
         function playWin() {
             win.play();

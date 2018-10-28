@@ -30,8 +30,8 @@
         $cards = array(-1,-1,-2,-2,-3,-3,-4,-4,-4,-4,-5,-5,-5,-5,-6,-6,-6,-6);
         for ($i = 0; $i < 1000; $i++)
         {
-            $indexA = mt_rand(0,17);
-            $indexB = mt_rand(0,17);
+            $indexA = rand(0,17);
+            $indexB = rand(0,17);
             $temp = $cards[$indexA];
             $cards[$indexA] = $cards[$indexB];
             $cards[$indexB] = $temp;
