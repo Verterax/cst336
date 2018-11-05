@@ -45,7 +45,7 @@
     <body>
         <br/><br/>
         <?php
-            if (isset($imageURLs) && empty($_GET['keyword']) && empty($_GET['catagory']))
+            if (isset($_GET['keyword']) && isset($_GET['keyword']) && empty($_GET['keyword']) && empty($_GET['catagory']))
             {
                 echo "<h3>Please enter a keyword or select a catagory.</h3>";
                 echo '<a href="index.php"><button class="btn btn-danger">Go Back</button></a>';
@@ -58,6 +58,9 @@
                 <!--HTML GOES HERE-->
                 <form method="GET">
                     <input type="text" name="keyword" placeholder="Keyword" value=""/>
+                    <input type="submit" value="Search"/> <br/>
+                    
+                    <label for="layout">Format: </label>
                     <input type="radio" name="layout" value="horizontal" id="hlayout" >
                     <label for="hlayout"> Horizontal </label>
                     
@@ -65,13 +68,12 @@
                     <label for="vlayout"> Vertical </label>
             
                     <select name="catagory">
-                        <option value ="">Select One</option>
+                        <option value ="">Choose Preset</option>
                         <option value="sea">Sea</option>
                         <option value="forest">Forest</option>
                         <option value="mountain">Mountain</option>
                         <option value="snow">Snow</option>
                     </select>
-                    <input type="submit" value="Search"/>
                 </form>
                
                 <?php

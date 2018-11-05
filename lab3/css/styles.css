@@ -2,12 +2,16 @@ body {
     opacity:0.9;
     width:100%;
     text-align:center;
-    color:yellow;
+    color:blue;
 }
     
 input {
     font-size: 3em;
     color: black;
+}
+
+#chooseLayout {
+    color: blue;
 }
     
 #carousel-example-generic {
