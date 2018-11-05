@@ -27,7 +27,7 @@
                 </tr>
                 <tr class= "assign-item">
                     <td><a href="lab3/index.php">Lab 3</a></td>
-                    <td>--</td>
+                    <td>Pixabay Demo</td>
                 </tr>
                 <tr class= "assign-item">
                     <td><a href="lab4/index.php">Lab 4</a></td>
