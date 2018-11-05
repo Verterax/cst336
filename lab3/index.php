@@ -1,10 +1,16 @@
 <?php
     $backgroundImage = "img/sea.jpg";
+    include 'api/pixabayAPI.php';
     
-    if (isset($_GET['keyword'])) {
-        include 'api/pixabayAPI.php';
+    if (isset($_GET['keyword']) && !empty($_GET['keyword'])) {
         $keyword = $_GET['keyword'];
-        $imageURLs = getImageURLS($keyword);
+        $imageURLs = getImageURLS($keyword, $_GET['layout']);
+        $backgroundImage = $imageURLs[array_rand($imageURLs)];
+    }
+    elseif (isset($_GET['catagory']) && !empty($_GET['catagory']))
+    {
+        $catagory = $_GET['catagory'];
+        $imageURLs = getImageURLS($catagory, $_GET['layout']);
         $backgroundImage = $imageURLs[array_rand($imageURLs)];
     }
 ?>
@@ -23,7 +29,7 @@
             
             h3 {
                 color: blue;
-                font-size: 58px;
+                font-size: 24px;
                 background-color: white;
                 margin: 0 auto;
                 margin-bottom: 20px;
@@ -39,7 +45,13 @@
     <body>
         <br/><br/>
         <?php
-            if (!isset($imageURLs)) {
+            if (isset($imageURLs) && empty($_GET['keyword']) && empty($_GET['catagory']))
+            {
+                echo "<h3>Please enter a keyword or select a catagory.</h3>";
+                echo '<a href="index.php"><button class="btn btn-danger">Go Back</button></a>';
+            }
+            elseif (!isset($imageURLs)) {
+                
                 echo "<h3> Type a keyword to display a slideshow <br/> with random images from Pixabay.com </h3>";
                 ?>
                 
@@ -66,7 +78,11 @@
             } 
             else {
                  // Display Carousel Here
-                 echo "<h3>You searched: " . $keyword . "</h3>";
+                 
+                if (isset($keyword) && !empty($keyword))
+                    echo "<h3>You searched: " . $keyword . "</h3>";
+                else
+                    echo "<h3>You searched: " . $catagory . "</h3>";
                  
             ?>
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
