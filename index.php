@@ -30,8 +30,8 @@
                     <td>Pixabay Demo</td>
                 </tr>
                 <tr class= "assign-item">
-                    <td><a href="lab4/index.php">Lab 4</a></td>
-                    <td>--</td>
+                    <td><a href="scart/index.php">Lab 4</a></td>
+                    <td>Shopping Cart</td>
                 </tr>
                 <tr class= "assign-item">
                     <td><a href="lab5/index.php">Lab 5</a></td>
