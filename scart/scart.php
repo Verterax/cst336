@@ -2,21 +2,23 @@
     session_start();
     include 'functions.php';
     
-    // If itemId quantity is sent, search for itemId and update quantity.
-    if (isset($_POST['itemId'])){
-        foreach($_SESSION['cart'] as &$item) {
-            if ($item['id'] == $_POST['itemId']) {
-                $item['quantity'] = $_POST['update'];
-            }
-        }
-    } elseif // If removeId has been sent, search cart for that itemId and unset it.
-    (isset($_POST['removeId'])) {
+    // If removeId has been sent, search cart for that itemId and unset it.
+    if (isset($_POST['removeId'])) {
         foreach($_SESSION['cart'] as $itemKey => $item) {
             if ($item['id'] == $_POST['removeId']) {
                 unset($_SESSION['cart'][$itemKey]);
             }
         }
     }
+    
+    // If itemId, quantity is sent. Search for itemId and update quantity.
+    if (isset($_POST['itemId'])){
+        foreach($_SESSION['cart'] as &$item) {
+            if ($item['id'] == $_POST['itemId']) {
+                $item['quantity'] = $_POST['update'];
+            }
+        }
+    } 
 
 ?>
 
