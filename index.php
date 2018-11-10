@@ -35,7 +35,7 @@
                 </tr>
                 <tr class= "assign-item">
                     <td><a href="lab5/index.php">Lab 5</a></td>
-                    <td>--</td>
+                    <td>Ottermart Product Search</td>
                 </tr>
                 <tr class= "assign-item">
                     <td><a href="lab6/index.php">Lab 6</a></td>
