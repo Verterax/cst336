@@ -19,7 +19,7 @@ body {
 	margin: auto;
 	width: 70vw;
 	background-color: black;
-	min-height: 35vh;
+	min-height: 60vh;
 	font-size: 1.5em;
 }
 
@@ -99,6 +99,6 @@ input[type=submit]:hover {
     font-size: 16px;
 }
 
-.btn-danger.a {
+.btn-danger {
 	color: white;
 }
