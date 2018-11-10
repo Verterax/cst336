@@ -94,7 +94,7 @@
                 Category:
                     <select name="category">
                         <option value="">Select One</option>
-                        <?=displayCategories();?>
+                        <?=displayCategories() ?>
                     </select>
                 <br/>
                 Price: From <input type="text" name="priceFrom" size="7"/>
@@ -115,6 +115,6 @@
         </div>
         <hr>
         
-        <?= displaySearchResults(); ?>
+        <?= displaySearchResults() ?>
     </body>
 </html>
