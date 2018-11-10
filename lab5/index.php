@@ -1,5 +1,4 @@
 <?php
-
     include 'dbConnection.php';
     
     $conn = getDatabaseConnection("ottermart");
@@ -109,7 +108,6 @@
                 <br><br>
                 <input type="submit" value="Search" name="searchForm"/>
             </form>
-            
             <br/>
             
         </div>
