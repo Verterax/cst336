@@ -1,0 +1,104 @@
+body {
+	background-color: rgb(21%, 25%, 44%);
+	color: white;
+	text-align: left;
+	font-size: 20px;
+}
+
+#search {
+	float: left;
+	margin-left: 5vw;
+}
+
+#options {
+	float: right;
+	margin-right: 5vw;
+}
+
+#content {
+	margin: auto;
+	width: 70vw;
+	background-color: black;
+	min-height: 35vh;
+	font-size: 1.5em;
+}
+
+#logo {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	text-align: center;
+	font-size: 2em;
+	color: #0028ff;
+}
+
+.item {
+	font-size: 20px;
+}
+
+.itemHeader {
+	font-size: 30px;
+}
+
+.itemName {
+	color: #ffd700;
+	padding-left: 20px;
+}
+
+.itemDesc {
+	color: #00ff0b;
+	padding-left: 20px;
+}
+
+.itemPrice {
+	color: #7100ff;
+	padding-left: 20px;
+}
+
+#header {
+	color: #00ff0b;
+}
+
+.history {
+	color: #0028ff;
+}
+
+a {
+	color: #0028ff;
+}
+
+a:hover {
+	color: #ffd700;
+	transition: 0.2s;
+}
+
+input[type=submit] {
+	height: 100%;
+	width: 120%;
+	background-color: green;
+	border-radius: 20%;
+	color: black;
+}
+
+input[type=submit]:hover {
+	transition: 0.2s;
+	color: yellow;
+}
+
+.historyItem {
+	margin: 15vh auto;
+	text-align: center;
+}
+
+.btn-danger {
+	color: #fff;
+	background-color:#dc3545;
+	border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.btn-danger.a {
+	color: white;
+}

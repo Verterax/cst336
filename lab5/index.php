@@ -23,6 +23,14 @@
         
         if (isset($_GET['searchForm'])) {
             echo "<h3>Products Found: </h3>";
+            echo "<span class='itemHeader'>";
+            echo "<span class='history'> History </span>";
+            echo "<span class='itemName'>Product Name </span>";
+            echo "<span class='itemPrice'>Price </span>";
+            echo "<span class='itemDesc'>Description </span>";
+            echo "</span>";
+            echo " <br/>";
+            echo "<hr>";
             
             //Query below prevents SQL injection style attack?
             $namedParams = array();
@@ -67,10 +75,19 @@
             $stmt->execute($namedParams);
             $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
             
+            echo "<table>";
+            
             foreach($records as $record) {
-                echo "<a href=\"purchaseHistory.php?productId=".$record["productId"]."\"> History </a>";
-                echo $record["productName"] . " " . $record["productDescription"] . " $" . $record["price"] . "<br/><br/>";
+                //echo "<h1>".$record['productName']."</h1>";
+                echo "<tr class='item'>";
+                echo "<td class='history'><a href=\"purchaseHistory.php?productId=".$record['productId']."\"> History </a></td>";
+                echo "<td class='itemName'>".$record['productName']."</td>";
+                echo "<td class='itemPrice'>$".$record['price']."</td>";
+                echo "<td class='itemDesc'>".$record['productDescription']."</td>";
+                echo "</tr>";
             }
+            
+            echo "</table>";
         }
     }
     
@@ -83,10 +100,12 @@
         <link href="css/styles.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <div>
-            <h1>OtterMart Product Search</h1>
+        <div id="content">
+        <div id="menu">
+            <h1 id="logo">OtterMart Product Search</h1>
             
             <form>
+                <span id="search">
                 Product: <input type="text" name="product"/>
                 
                 <br/>
@@ -96,6 +115,10 @@
                         <?=displayCategories() ?>
                     </select>
                 <br/>
+                <input id="searchButton" type="submit" value="Search" name="searchForm"/>
+                </span>
+                
+                <span id="options">
                 Price: From <input type="text" name="priceFrom" size="7"/>
                        To   <input type="text" name="priceTo" size="7"/>
                 <br/>
@@ -104,15 +127,13 @@
                 
                 <input type="radio" name="orderBy" value="price"/>Price<br>
                 <input type="radio" name="orderBy" value="name"/>Name
+                </span>
                 
-                <br><br>
-                <input type="submit" value="Search" name="searchForm"/>
             </form>
-            <br/>
-            
+            <br/><br/><br/>
         </div>
-        <hr>
         
         <?= displaySearchResults() ?>
+        </div>
     </body>
 </html>
