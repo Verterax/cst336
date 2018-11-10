@@ -4,7 +4,6 @@
     
     $conn = getDatabaseConnection("ottermart");
     
-    
     function displayCategories() {
         global $conn;
         
