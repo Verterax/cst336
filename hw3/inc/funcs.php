@@ -127,7 +127,7 @@
                     echo "<img class='textImg' src='img/x.png'>".PHP_EOL;
                 }
             } else {
-                echo "<h1 class='bad'>ANSWER NOT MARKED</h1>";
+                echo "<h2 class='bad'>ANSWER NOT MARKED</h2>";
             }
         }
         
@@ -167,7 +167,7 @@
                     echo "<img class='textImg' src='img/x.png'>".PHP_EOL;
                 }
             } else {
-                echo "<h1>ANSWER NOT MARKED</h1>";
+                echo "<h2 class='bad'>ANSWER NOT MARKED</h2>";
             }
         }
         
@@ -210,7 +210,7 @@
                     echo "<img class='textImg' src='img/x.png'>".PHP_EOL;
                 }
             } else {
-                echo "<h1>ANSWER NOT MARKED</h1>";
+                echo "<h2 class='bad'>ANSWER NOT MARKED</h2>";
             }
         }
         
