@@ -17,7 +17,7 @@ body {
     border-color: black;
     border-radius: 15px;
     min-width: 40vw;
-    max-width: 60%;
+    max-width: 800px;
     background: url("../img/bg.png");
     background-repeat: repeat;
     color: white;
