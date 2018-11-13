@@ -74,7 +74,7 @@
                 </tr>
                 <tr class= "assign-item">
                     <td><a href="hw3/index.php">Homework 3</a></td>
-                    <td>--</td>
+                    <td>Minecraft Blocks Quizlet</td>
                 </tr>
                 <tr class= "assign-item">
                     <td><a href="hw4/index.php">Homework 4</a></td>

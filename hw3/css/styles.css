@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'minecraft';
+    src: url('../font/Minecrafter.Alt.ttf');
+}
+
+body {
+    background-color: black;
+    background: url("../img/wallpaper.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+.pane {
+    margin: auto;
+    border-style: solid;
+    border-color: black;
+    border-radius: 15px;
+    min-width: 40vw;
+    max-width: 60%;
+    background: url("../img/bg.png");
+    background-repeat: repeat;
+    color: white;
+    font-size: 22px;
+    z-index: -1;
+    padding: 5px;
+}
+
+#header {
+    font-family: 'minecraft';
+    text-shadow: 25px 25px 65px #000000;
+    text-align: center;
+    font-size: 3em;
+}
+
+#header a {
+    color: white;
+}
+
+#header a:hover {
+    color: white;
+}
+
+#footer {
+    text-align: center;
+}
+
+.btn-submit {
+   margin: auto;
+   width: 300px;
+}
+
+#submitButton {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+input {
+    color: black;
+    text-align: center;
+}
+
+select {
+    color: black;
+}
+
+.blockImg {
+    height: 96px;
+    width: 96px;
+    margin: 10px;
+}
+
+.radioItem {
+    margin-left: 35px;
+}
+
+.radioButton {
+    margin-left: 25px !important;
+}
+
+.question {
+    margin: auto;
+    text-align: center;
+}
+
+.textImg {
+    margin-top: 10px;
+}
+
+#score {
+    padding: 16px;
+    text-align:center;
+}
+
+.highlight {
+    color: #3AA9CF;
+}
+
+.bad {
+    color: red;
+}
+
+.better {
+    color: orange;
+}
+
+.best {
+    color: green;
+}
