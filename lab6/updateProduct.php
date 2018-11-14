@@ -26,7 +26,8 @@
         
         $statement = $conn->prepare($sql);
         $statement->execute($np);
-        echo "Product has been updated!!";
+        
+        echo "<p class='alert alert-success' id='message'>Product has been updated!</p>";
     }
     
     if (isset($_GET['productId'])) {
@@ -73,7 +74,7 @@
         <form>
             <input type="hidden" name="productId" value="<?=$product['productId']?>" />
             <strong>Product Name</strong> <input type="text" class="form-control" name="productName" value="<?=$product['productName']?>"><br>
-            <strong>Description</strong> <textarea name="description" class="form-control" cols=50 rows=4><?=$product['productDescription']?></textarea><br>
+            <strong>Description</strong> <textarea name="productDescription" class="form-control" cols=50 rows=4><?=$product['productDescription']?></textarea><br>
             <strong>Price</strong> <input type="text" class="form-control" name="price" value="<?=$product['price']?>"><br>
     
             <strong>Category</strong> <select name="catId" class="form-control">
@@ -82,6 +83,9 @@
             </select> <br>
             <strong>Set Image URL</strong> <input type="text" name="productImage" class="form-control" value="<?=$product['productName']?>"><br>
             <input type="submit" name="updateProduct" class="btn btn-primary" value="Update Product">
+        </form>
+        <form action="admin.php" class="inlineButton">
+            <input type="submit" class="btn btn-secondary" value="Back" />
         </form>
     </body>
 </html>
