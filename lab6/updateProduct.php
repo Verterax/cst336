@@ -52,7 +52,9 @@
         $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
         
         foreach($records as $record){
-            echo "<option value='" . $record["catId"] . "'>" . $record["catName"] . " </option>";
+            echo "<option ";
+            echo ($record["catId"] == $catId) ? "selected" : "";
+            echo " value='" . $record["catId"] . "'>" . $record["catName"] . " </option>";
         }
     }
 ?>
@@ -76,7 +78,7 @@
     
             <strong>Category</strong> <select name="catId" class="form-control">
                 <option value="">Select One</option>
-                <?php getCategories(); ?>
+                <?php getCategories($product['productId']); ?>
             </select> <br>
             <strong>Set Image URL</strong> <input type="text" name="productImage" class="form-control" value="<?=$product['productName']?>"><br>
             <input type="submit" name="updateProduct" class="btn btn-primary" value="Update Product">
