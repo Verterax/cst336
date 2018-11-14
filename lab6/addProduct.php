@@ -32,11 +32,11 @@
         echo "<p class='alert alert-success' id='message'>Product successfully added!</p>";
     }
     
-    function getCategories($catId) {
+    function getCategories() {
         global $conn;
         $sql = "SELECT catId, catName FROM om_category ORDER BY catName";
         $stmt = $conn->prepare($sql);
-        $stmt-> execute();
+        $stmt->execute();
         $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
         
         foreach($records as $record){
