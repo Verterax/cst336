@@ -38,8 +38,8 @@
                     <td>Ottermart Product Search</td>
                 </tr>
                 <tr class= "assign-item">
-                    <td><a href="lab6/login.php">Ottermart Admin</a></td>
-                    <td>--</td>
+                    <td><a href="lab6/login.php">Lab 6</a></td>
+                    <td>Ottermart Admin</td>
                 </tr>
                 <tr class= "assign-item">
                     <td><a href="lab7/index.php">Lab 7</a></td>
