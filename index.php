@@ -43,7 +43,7 @@
                 </tr>
                 <tr class= "assign-item">
                     <td><a href="lab7/index.php">Lab 7</a></td>
-                    <td>--</td>
+                    <td>Hangman Game</td>
                 </tr>
                 <tr class= "assign-item">
                     <td><a href="lab8/index.php">Lab 8</a></td>
