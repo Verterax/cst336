@@ -42,7 +42,7 @@
                     <td>Ottermart Admin</td>
                 </tr>
                 <tr class= "assign-item">
-                    <td><a href="lab7/index.php">Lab 7</a></td>
+                    <td><a href="lab7/index.html">Lab 7</a></td>
                     <td>Hangman Game</td>
                 </tr>
                 <tr class= "assign-item">
