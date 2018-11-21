@@ -77,8 +77,8 @@
                     <td>Minecraft Blocks Quizlet</td>
                 </tr>
                 <tr class= "assign-item">
-                    <td><a href="hw4/index.php">Homework 4</a></td>
-                    <td>--</td>
+                    <td><a href="hw4/index.html">Homework 4</a></td>
+                    <td>Space Invaders!</td>
                 </tr>
                 
                 
