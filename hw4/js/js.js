@@ -42,53 +42,35 @@ function init(){
 	gameScreen.style.height = GS_HEIGHT + 'px';
 	
 	bg1 = document.createElement('IMG');
-	//bg1 = $.create("IMG");
-	
-	bg1.src = 'img/bg.jpg';
-	bg1.className = 'gameObject';
-	bg1.style.width = '800px';
-	bg1.style.height = '1422px';
-	bg1.style.top = '0px';
-	bg1.style.left = '0px';
+	bg1.className = 'gameObject bg1';
 	gameScreen.appendChild(bg1);
+	$(".bg1").css({top: '0px', left:'0px', width:'800px', height: '1422px'}).attr("src", 'img/bg.jpg');
+	
 	
 	bg2 = document.createElement('IMG');
-	bg2.src = 'img/bg.jpg';
-	bg2.className = 'gameObject';
-	bg2.style.width = '800px';
-	bg2.style.height = '1422px';
-	bg2.style.left = '0px';
-	bg2.style.top = '-1422px';
-	//bg2.style.zIndex = -1;
+	bg2.className = 'gameObject bg2';
 	gameScreen.appendChild(bg2);
+	$(".bg2").css({top: '-1422px', left:'0px', width:'800px', height: '1422px'}).attr("src", 'img/bg.jpg');
 	
 	bullets = document.createElement('DIV');
-	bullets.className = 'gameObject';
-	bullets.style.width = gameScreen.style.width;
-	bullets.style.height = gameScreen.style.height;
-	bullets.style.left = '0px';
-	bullets.style.top = '0px';
+	bullets.className = 'gameObject bullets';
 	gameScreen.appendChild(bullets);
+	$(".bullets").css({top: '0px', left:'0px', width: gameScreen.style.width + 'px', height: gameScreen.style.height + 'px'});
 
 	output = document.getElementById('output');
 
 	ship = document.createElement('IMG');
-	ship.src = 'img/ship.gif';
-	ship.className = 'gameObject';
-	ship.style.width = '68px';
-	ship.style.height = '68px';
-	ship.style.top = '500px';
-	ship.style.left = '366px';
+	ship.className = 'gameObject ship';
 	gameScreen.appendChild(ship);
+	$(".ship").css({top: '500px', left:'366px', width:'68px', height: '68px'}).attr("src", 'img/ship.gif');
 	
 	// Add enemy ships
 	for(var i = 0; i< 10;i++) {
 		var enemy = new Image();
-		enemy.className = 'gameObject';
-		enemy.style.width = '64px';
-		enemy.style.height = '64px';
-		enemy.src = 'img/enemyShip.gif';
+		enemy.className = 'gameObject ' + 'enemy' + i;
 		gameScreen.appendChild(enemy);
+		$(".enemy" + i).css({width: '64px', height: '64px'}).attr("src", 'img/enemyShip.gif');
+		
 		placeEnemyShip(enemy);
 		enemies[i] = enemy;
 	}
