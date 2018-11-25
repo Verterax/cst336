@@ -32,3 +32,20 @@ h1 {
 #screenWrapper {
 	margin: auto;
 }
+
+.pane {
+    margin: auto;
+    border-style: solid;
+    border-color: black;
+    border-radius: 15px;
+    min-width: 40vw;
+    max-width: 800px;
+    background-repeat: repeat;
+    color: white;
+    font-size: 22px;
+    padding: 5px;
+}
+
+#footer {
+    text-align: center;
+}

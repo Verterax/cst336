@@ -18,9 +18,11 @@ const BG_SPEED = 4;
 const GS_WIDTH = 800;
 const GS_HEIGHT = 600;
 
+
 $(document).keypress(function(e) {
 	if (e.charCode == 32)
 		fire();
+		return false;
 });
 
 $(document).keydown(function(e) {
