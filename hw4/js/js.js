@@ -172,9 +172,9 @@ function shipMovement() {
 		var newX = parseInt(ship.style.left);
 		
 		if(newX > 0) 
-		    ship.style.left = newX - 20 + 'px';
+			$('.ship').css({left: newX - 20 + 'px'});
 		else 
-		    ship.style.left = '0px';
+			$('.ship').css({left: '0px'});
 	}
 
 	if(rightArrowDown){
@@ -183,9 +183,9 @@ function shipMovement() {
 		var maxX = GS_WIDTH - parseInt(ship.style.width);
 		
 		if(newX <  maxX) 
-		    ship.style.left = newX + 20 + 'px';
+			$('.ship').css({left: newX + 20 + 'px'});
 		else 
-		ship.style.left = maxX + 'px';
+			$('.ship').css({left: maxX + 'px'});
 	}
 }
 
@@ -193,16 +193,16 @@ function scrollBG() {
     
     var bgY = parseInt(bg1.style.top) + BG_SPEED;
     if (bgY > GS_HEIGHT) {
-        bg1.style.top = -1 * parseInt(bg1.style.height) + 'px';
+    	$(".bg1").css({top: (-1 * parseInt(bg1.style.height)) + 'px'});
     } else {
-        bg1.style.top = bgY + 'px';
+    	$(".bg1").css({top: bgY + 'px'});
     }
     
     bgY = parseInt(bg2.style.top) + BG_SPEED;
     if (bgY > GS_HEIGHT) {
-        bg2.style.top = -1 * parseInt(bg2.style.height) + 'px';
+        $(".bg2").css({top: (-1 * parseInt(bg2.style.height)) + 'px'});
     } else {
-        bg2.style.top = bgY + 'px';
+    	$(".bg2").css({top: bgY + 'px'});
     }
 }
 
