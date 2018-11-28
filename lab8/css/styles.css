@@ -1,0 +1,55 @@
+body {
+    text-align: center;
+}
+
+h1, h2 {
+    text-align: center !important;
+}
+
+#carousel-example-generic {
+    margin: 0 auto;   
+ 
+}
+
+.carousel-item img {
+    /*width: 300px;*/
+    height: 300px;
+}
+
+.carousel-control-prev {
+    height: 100px;
+    width: 100px;
+    background-color: gray;
+    margin: auto;
+    margin-left: 20%;
+    border-radius: 20px;
+}
+
+.carousel-control-next {
+    height: 100px;
+    width: 100px;
+    background-color: gray;
+    margin: auto;
+    margin-right: 20%;
+    border-radius: 20px;
+}
+
+.adoptButton {
+    position: absolute;
+    right: 100px;
+    bottom: 10px;
+}
+
+.adoptText {
+    margin-left: 100px;
+}
+
+.petBar {
+    padding: 5px;
+    margin: 1% auto;
+    background-color: #B5B5B5;
+    border-radius: 20px;
+    text-align: left;
+    position: relative;
+    max-width: 800px;
+}
