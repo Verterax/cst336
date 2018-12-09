@@ -12,6 +12,7 @@
         </div>
         <div id="assignments">
             <table>
+                <tr><td><br></td><td><br></td></tr>
                 <tr class="assign-header">
                     <td>Lab N</td>
                     <td>Desc.</td>
@@ -50,14 +51,6 @@
                     <td>CSUMB Pet Shelter</td>
                 </tr>
                 <tr><td><br></td><td><br></td></tr>
-                <!--<tr class= "assign-item">-->
-                <!--    <td><a href="lab9/index.php">Lab 9</a></td>-->
-                <!--    <td>--</td>-->
-                <!--</tr>-->
-                <!--<tr class= "assign-item">-->
-                <!--    <td><a href="lab10/index.php">Lab 10</a></td>-->
-                <!--    <td>--</td>-->
-                <!--</tr>-->
                 
                 <tr class="assign-header">
                     <td>Homework N</td>
