@@ -49,6 +49,7 @@
                     <td><a href="lab8/index.php">Lab 8</a></td>
                     <td>CSUMB Pet Shelter</td>
                 </tr>
+                <tr><td><br></td><td><br></td></tr>
                 <!--<tr class= "assign-item">-->
                 <!--    <td><a href="lab9/index.php">Lab 9</a></td>-->
                 <!--    <td>--</td>-->
@@ -80,15 +81,11 @@
                     <td><a href="hw4/index.html">Homework 4</a></td>
                     <td>Space Invaders!</td>
                 </tr>
+                <tr><td><br></td><td><br></td></tr>
                 
-                
-                <tr class="assign-header">
-                    <td>Team Project</td>
-                    <td>--</td>
-                </tr>
-                <tr class="assign-header">
-                    <td>Team Project</td>
-                    <td>--</td>
+                <tr class="assign-item">
+                    <td><a href="https://cst336-8bit-final.herokuapp.com/">Team Project Final</a></td>
+                    <td>Steam 2.0 eCommerce Website</td>
                 </tr>
             </table>
         </div>
