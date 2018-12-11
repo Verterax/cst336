@@ -77,7 +77,7 @@
                 <tr><td><br></td><td><br></td></tr>
                 
                 <tr class="assign-item">
-                    <td><a href="https://cst336-8bit-final.herokuapp.com/">Team Project Final</a></td>
+                    <td><a href="final/index.php">Team Project Final</a></td>
                     <td>Steam 2.0 eCommerce Website</td>
                 </tr>
             </table>
